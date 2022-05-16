@@ -1,0 +1,221 @@
+
+
+
+** Everything in python is Object **
+**** Every object contains methods ****
+
+
+number
+--------
+number can be integer or decimal or octal or hexa.
+
+val = 10
+aval = 34.43
+
+
+string
+---------
+string is defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "python programming"
+cname = """python programming"""
+
+
+list ( array in C )
+----
+list contains set of elements.
+Elements can be numbers or strings or any combination.
+list elements are defined in []
+
+alist = [10,20,30,40,50]
+blist = ["python","c",45.43,67]
+
+
+tuple ( immutable , unchangable , uneditable )
+---------------------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination.
+tuple elements are defined in ().
+**** Elements inside tuple cant be modified DIRECTLY *****
+
+atup = (10,320,40)
+btup = ("python","java",43,3)
+
+
+dictionary ( json)
+-----------
+dictionary contains elements in the keys and values.
+Indexing is NOT allowed in dictionary
+
+In dictionary:
+   key can be either number or string which to used to uniquely identify
+   value can be number or string or list or tuple or dictionary or any other complex structure
+
+
+syntax:  object = {key:value , key:value ... }
+example:  book  = {"chap1":10 ,"chap2":20 }
+         bookinfo={"chap1":[10,"Rita","US"] ,"chap2":[20,"Rao","UK"] }
+          book  = {"chap1":10 ,"chap2":20 ,"chap1":30 }
+
+
+
+set
+-------------
+set is UNORDERED collection of UNIQUE values of the same TYPE.
+
+aset = {10,20,10,50,30,10,40}
+
+
+
+
+
+
+
+commenting in python
+-------------------
+
+
+# this is single line comment
+
+
+
+
+"""
+all these lines
+are commented
+"""
+
+
+
+
+
+
+
+
+
+
+
+level1
+level1
+level1
+level1
+if cond:
+    level12
+    level2
+    level2
+    level2
+else:
+    level2
+    level2
+    level2
+
+
+
+classification of objects
+---------------------------
+
+mutable objects
+------------------
+list
+dictionary
+set
+
+
+
+immutable objects
+-----------------
+number
+string
+tuple
+
+
+
+
+
+function | definition | subroutine | submodule
+-----------------------------------------------
+- reusability
+- defining the code once and calling it for mutliple times
+
+
+
+- builtin functions
+- user defined functions
+
+
+builtin functions
+---------------------
+print()
+range()
+len()
+dir()
+help()
+type()
+input()
+sum()
+max()
+min()
+isinstance()
+chr()
+ord()
+open()
+
+
+typecasting functions
+------------------------
+int()
+str()
+float()
+oct()
+hex()
+list()
+tuple()
+dict()
+set()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
