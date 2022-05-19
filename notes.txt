@@ -2,7 +2,7 @@
 
 
 ** Everything in python is Object **
-**** Every object contains methods ****
+**** Every object contains class methods ****
 
 
 number
@@ -55,6 +55,7 @@ In dictionary:
 
 syntax:  object = {key:value , key:value ... }
 example:  book  = {"chap1":10 ,"chap2":20 }
+          info  = {1:2,3:4,5:6}
          bookinfo={"chap1":[10,"Rita","US"] ,"chap2":[20,"Rao","UK"] }
           book  = {"chap1":10 ,"chap2":20 ,"chap1":30 }
 
@@ -144,7 +145,7 @@ function | definition | subroutine | submodule
 - user defined functions
 
 
-builtin functions
+builtin functions      ( IN the console...     dir(__builtin__)
 ---------------------
 print()
 range()
@@ -174,6 +175,269 @@ tuple()
 dict()
 set()
 
+
+operators
+------------
+
+
+arithmetic operators :   + - * % /
+
+relational operators :  < <= > >= == !=
+-------------------
+
+logical operators :   and or not
+------------------
+name ='python'
+if len(name) == 6  and name.islower():
+    # do something
+
+
+assignment operators  ( ++ and -- are not allowed in python )
+-----------------------
+
+val  = 10
+val+=1  or  val= val + 1  
+
+
+special operators
+---------------------
+in
+
+    
+if 'gram' in name:
+    print("exists")
+else:
+    print("doesnt exist")
+
+as
+
+
+*:
+
++:
+
+
+
+
+file handling
+-----------------
+
+working with flat files (  .txt .log .conf .properties .csv .... )
+----------------------------------------------------
+
+
+- read 
+- write
+- append
+
+
+
+opening the file
+-------------------
+syntax:   object = open(filename,mode)
+example:    fobj = open("customers.txt","r")
+
+
+            fobj = open("customers.txt","w")
+            case1 : if file is not exising , file gets created first
+            case2 : if file is already existing, it overwrites the content
+
+            fobj = open("customers.txt","a")
+            case1 : if file is not exising , file gets created first
+            case2 : if file is already existing, it appends the content to the end of the file
+
+
+closing the file
+------------------
+fobj.close()
+
+
+
+read operation
+------------------
+
+- reading line by line using file object
+- fobj.readlines()
+- fobj.read()
+- using csv library
+- using pandas library
+
+
+
+exception handling
+--------------------
+
+there are 2 types of exceptions
+
+1. syntax error
+2. semantic error or runtime error
+
+Handling the exceptions found in the runtime is known as exception handling
+
+
+try
+except
+else
+finally
+raise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+working with third party files ( xlsx  docx pdf mp4 ... )
+----------------------------------------
+all the libraries to work with third party extensions are available from www.pypi.org
+
+
+
+
+
+
+function | definition | submodule | subroutine
+-------------------------------------------
+- resusability
+
+
+
+ways of passing parameters
+----------------------------
+
+- fixed arguments
+- default arguments
+- keyword arguments
+- variable length arguments
+
+
+
+
+
+
+library | package | module
+------------------------
+
+
+- builtin libraries
+--------------------
+All the builtin libraries which are generally used( math operations , system level operaitons , emailing, string handling , ftp operations , multi processsing , extracing ....) are available with python by default.
+
+
+- third party libraries
+----------------------
+Depending on the requirement( cloud , data analytics , Machine learning , image processing , networking , database programming ) developer has to install the third party package 
+
+- pip tool
+- easy_install tool
+- conda tool  ( comes with anaconda-python)
+- download and install manually from www.pypi.org
+
+
+
+pip install <libraryname>
+easy_install <libraryname>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+display all existing databases
+-----------------------------
+show databases ;
+
+create your database
+--------------------
+create database jpmc ;
+
+access your database
+---------------------
+use jpmc ;
+
+create table 
+---------------
+create table realestate ( street varchar(100) , city varchar(100) ) ;
+
+inserting records
+-------------------
+insert into realestate values('Hitechcity','Hyderabad');
+insert into realestate values('MG Road','delhi');
+
+display all the records
+-----------------------
+select * from realestate;
+
+
+
+
+
+
+
+
+programming
+--------------
+
+- procedural programming  ( top down approach )
+
+- object oriented programming
+-----------------------------------
+- reusability
+
+
+
+class
+object
+self
 
 
 
