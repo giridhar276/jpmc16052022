@@ -332,7 +332,7 @@ ways of passing parameters
 - fixed arguments
 - default arguments
 - keyword arguments
-- variable length arguments
+- variable length arguments  
 
 
 
@@ -353,7 +353,6 @@ All the builtin libraries which are generally used( math operations , system lev
 Depending on the requirement( cloud , data analytics , Machine learning , image processing , networking , database programming ) developer has to install the third party package 
 
 - pip tool
-- easy_install tool
 - conda tool  ( comes with anaconda-python)
 - download and install manually from www.pypi.org
 
@@ -435,9 +434,35 @@ programming
 
 
 
+object oriented programming  - principles
+-----------------------------------------
+- common across all the object oriented languages.
+
+- class object
+- encapsulation
+- Inheritance
+- polymorphism
+  -> function overloading
+  -> operator overloading
+
+
+
+
+
+
 class
+------
+class is something like blueprint of the house.
+class contains data members(variables) and member functions.
+
 object
+--------
+object is the instance of the class.
+
+
 self
+-----
+self is instance of the object
 
 
 
@@ -446,6 +471,212 @@ self
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+builtin libraries which are generally used
+----------------------------------------
+sys           : system python config information
+urllib.request: working with http
+math          : mathematical operations
+random        : random numbers
+calendar
+smtplib       : sending mails
+ftplib        : ftp'ng the file
+telnetlib     :
+logging       : logging all the events
+shutil        : copy,move,rmtree ....
+filecmp       : comparing directories
+zipfile       : create/extract the zip files
+rarfile       : create/extract the tar files
+tarfile       : create/extract the tarfiles
+getpass       : shadowing the password
+json          : reading/writing json files
+csv           : reading/writing csv files
+xml        
+sysconfig     : system configuration
+collections   : working with dictionaries
+argparse      : passing args from command line
+optparse      : passing args from command line
+time          : working with date and time
+datetime      : working with date and time
+cryptography  : encrypting and decrypting the passwords
+heapq         : performing array operations
+gzip          : reading gunzip files
+re            : validating the strings
+ipadresss     : validting ip address
+platform      : display platform information
+pathlib       : creating temp files
+threading     : for performing multi threading
+multiprocessing:
+subprocess    : invoking the system commands ( linux or dos commands)
+
+
+
+frequently used third party libraries
+---------------------------------------
+database related
+----------------
+pymysql   :
+cx_Oracle
+pymongo
+pymssql
+
+web frameworks ( developing web applications)
+--------------
+django
+flask
+bottom
+
+analytics/machine learning
+---------------------------
+numpy
+scipy
+pandas
+seaborn
+plotly
+ggplot
+matplotlib   : visualizing data .. bar graph.. pie graph
+scikit-learn :  machine learning algorithms
+
+image processing
+---------------
+pillow
+opencv
+pytorch
+
+
+APIs ( REST API)
+-----
+requests
+
+excel programming
+------------------
+openpyxl    : reading/write excel files
+xlsxwriter  : writing to excel file
+python-docx : working with ms-word
+pandas
+
+networking
+-----------
+paramiko   :  interacting with remote servers
+netmiko    :  connecting to router/switch
+pyping     :  ping any host or ip address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pandas
+-------
+-csv
+-xlsx
+-html
+-web
+-json
+-hdf
+-db
+
+
+
+python
+---------
+number string list tuple dictionary set
+
+
+pandas
+------
+-series    ( 1-D )
+-dataframe ( 2-D)
+
+
+
+
+
+hello.py
+
+hello.ipynb
+
+
+
+
+
+
+
+re
+---
+-search anywhere in the string
+-match at the beginning
+-subs
+-findall
+-split
+
+
+wildcard characters or metacharacters
+-----------------------------------------
+
+^  : at the beginning 
+     if re.search("^python",line):
+
+$ : at the end of the string
+    if re.search("python$",line):
+
+* :  zero or more occurences of the preceding character
+     if re.search("pyt*hon",line):
+
+.  : any single character
+
++ : one or more occurence of hte preceding character
+     if re.search("pyt+hon",line):
+
+? : either zero of once occurence of the preceding character
+     if re.search("pyt?hon",line):
+
+[] : character class
+     if re.search("[qmrt]ython",line):
+     qython  or mython  or rython or tython
+
+() ; (match1|match2|match3)
+     (python|unix)
+     if re.search("python$|unix",line):
+
+{} : { min,max} occurences of the preceding character
+     if re.search("pyt{2,}hon",line):
+
+\d : digit
+\w : word boundary
+\s : space
 
 
 
